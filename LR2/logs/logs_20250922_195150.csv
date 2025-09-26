@@ -1,0 +1,100 @@
+Event;Timestamp
+black_list_check_full ERROR: Ошибка: Неверный формат даты '22-03-1989'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:04:18
+black_list_check_full ERROR: Ошибка: Неверный формат даты '1989.03.22'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:04:18
+black_list_check_full RES: no, bad boy;2025-09-22 19:04:18
+black_list_check_full RES: similar good boy;2025-09-22 19:04:19
+black_list_check_full RES: similar good boy;2025-09-22 19:04:19
+black_list_check_full RES: similar good boy;2025-09-22 19:04:19
+black_list_check_full RES: similar good boy;2025-09-22 19:04:19
+black_list_check_full RES: similar good boy;2025-09-22 19:04:19
+black_list_check_full RES: no, bad boy;2025-09-22 19:04:19
+black_list_check_full RES: no, bad boy;2025-09-22 19:04:19
+black_list_check_full RES: yes good boy;2025-09-22 19:04:43
+black_list_check_full RES: yes good boy;2025-09-22 19:04:43
+black_list_check_full RES: no, bad boy;2025-09-22 19:04:43
+black_list_check_full ERROR: Ошибка: Дата рождения '22.03.2026' не может быть позже текущей даты;2025-09-22 19:04:43
+black_list_check_full ERROR: Ошибка: Неверный формат даты '22-03-1989'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:04:43
+black_list_check_full ERROR: Ошибка: Неверный формат даты '1989.03.22'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:04:43
+black_list_check_full RES: no, bad boy;2025-09-22 19:04:43
+black_list_check_full RES: similar good boy;2025-09-22 19:04:43
+black_list_check_full RES: similar good boy;2025-09-22 19:04:43
+black_list_check_full RES: similar good boy;2025-09-22 19:04:43
+black_list_check_full RES: similar good boy;2025-09-22 19:04:43
+black_list_check_full RES: similar good boy;2025-09-22 19:04:43
+black_list_check_full RES: yes good boy;2025-09-22 19:04:43
+black_list_check_full RES: similar good boy;2025-09-22 19:04:43
+black_list_check_full RES: similar good boy;2025-09-22 19:21:57
+black_list_check_full RES: yes good boy;2025-09-22 19:21:57
+black_list_check_full RES: yes good boy;2025-09-22 19:21:57
+black_list_check_full RES: no, bad boy;2025-09-22 19:21:57
+black_list_check_full ERROR: Ошибка: Дата рождения '22.03.2026' не может быть позже текущей даты;2025-09-22 19:21:57
+black_list_check_full ERROR: Ошибка: Неверный формат даты '22-03-1989'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:21:57
+black_list_check_full ERROR: Ошибка: Неверный формат даты '1989.03.22'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:21:57
+black_list_check_full RES: no, bad boy;2025-09-22 19:21:57
+black_list_check_full RES: similar good boy;2025-09-22 19:21:57
+black_list_check_full RES: similar good boy;2025-09-22 19:21:57
+black_list_check_full RES: similar good boy;2025-09-22 19:21:57
+black_list_check_full RES: similar good boy;2025-09-22 19:21:57
+black_list_check_full RES: similar good boy;2025-09-22 19:21:57
+black_list_check_full RES: yes good boy;2025-09-22 19:21:57
+black_list_check_full RES: similar good boy;2025-09-22 19:21:58
+black_list_check_full RES: similar good boy;2025-09-22 19:22:49
+black_list_check_full RES: yes good boy;2025-09-22 19:22:49
+black_list_check_full RES: yes good boy;2025-09-22 19:22:49
+black_list_check_full RES: no, bad boy;2025-09-22 19:22:49
+black_list_check_full ERROR: Ошибка: Дата рождения '22.03.2026' не может быть позже текущей даты;2025-09-22 19:22:49
+black_list_check_full ERROR: Ошибка: Неверный формат даты '22-03-1989'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:22:49
+black_list_check_full ERROR: Ошибка: Неверный формат даты '1989.03.22'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:22:49
+black_list_check_full RES: no, bad boy;2025-09-22 19:22:49
+black_list_check_full RES: similar good boy;2025-09-22 19:22:49
+black_list_check_full RES: similar good boy;2025-09-22 19:22:49
+black_list_check_full RES: similar good boy;2025-09-22 19:22:49
+black_list_check_full RES: similar good boy;2025-09-22 19:22:49
+black_list_check_full RES: similar good boy;2025-09-22 19:22:49
+black_list_check_full RES: yes good boy;2025-09-22 19:22:49
+black_list_check_full RES: similar good boy;2025-09-22 19:22:49
+black_list_check_full RES: similar good boy;2025-09-22 19:23:47
+black_list_check_full RES: yes good boy;2025-09-22 19:23:47
+black_list_check_full RES: yes good boy;2025-09-22 19:23:47
+black_list_check_full RES: no, bad boy;2025-09-22 19:23:47
+black_list_check_full ERROR: Ошибка: Дата рождения '22.03.2026' не может быть позже текущей даты;2025-09-22 19:23:47
+black_list_check_full ERROR: Ошибка: Неверный формат даты '22-03-1989'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:23:47
+black_list_check_full ERROR: Ошибка: Неверный формат даты '1989.03.22'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:23:47
+black_list_check_full RES: no, bad boy;2025-09-22 19:23:47
+black_list_check_full RES: similar good boy;2025-09-22 19:23:47
+black_list_check_full RES: similar good boy;2025-09-22 19:23:47
+black_list_check_full RES: similar good boy;2025-09-22 19:23:47
+black_list_check_full RES: similar good boy;2025-09-22 19:23:47
+black_list_check_full RES: similar good boy;2025-09-22 19:23:47
+black_list_check_full RES: yes good boy;2025-09-22 19:23:47
+black_list_check_full RES: similar good boy;2025-09-22 19:23:47
+send_back_binarization with percent;2025-09-22 19:27:56
+send_back_binarization_with_percent;2025-09-22 19:28:00
+send_back_binarization without percent;2025-09-22 19:28:04
+send_back_binarization_with_percent;2025-09-22 19:28:10
+send_back_binarization without percent;2025-09-22 19:28:15
+send_back_binarization_with_percent;2025-09-22 19:28:45
+send_back_binarization without percent;2025-09-22 19:28:49
+ping;2025-09-22 19:48:18
+now;2025-09-22 19:48:18
+black_list_check_full RES: similar good boy;2025-09-22 19:48:21
+black_list_check_full RES: yes good boy;2025-09-22 19:48:21
+black_list_check_full RES: yes good boy;2025-09-22 19:48:21
+black_list_check_full RES: no, bad boy;2025-09-22 19:48:21
+black_list_check_full ERROR: Ошибка: Дата рождения '22.03.2026' не может быть позже текущей даты;2025-09-22 19:48:21
+black_list_check_full ERROR: Ошибка: Неверный формат даты '22-03-1989'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:48:21
+black_list_check_full ERROR: Ошибка: Неверный формат даты '1989.03.22'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 19:48:21
+black_list_check_full RES: no, bad boy;2025-09-22 19:48:21
+black_list_check_full RES: similar good boy;2025-09-22 19:48:21
+black_list_check_full RES: similar good boy;2025-09-22 19:48:21
+black_list_check_full RES: similar good boy;2025-09-22 19:48:21
+black_list_check_full RES: similar good boy;2025-09-22 19:48:21
+black_list_check_full RES: similar good boy;2025-09-22 19:48:21
+black_list_check_full RES: yes good boy;2025-09-22 19:48:21
+black_list_check_full RES: similar good boy;2025-09-22 19:48:21
+send_back_binarization with percent;2025-09-22 19:48:26
+send_back_binarization_with_percent;2025-09-22 19:48:30
+send_back_binarization without percent;2025-09-22 19:48:32
+ping;2025-09-22 19:51:48
+now;2025-09-22 19:51:48
+black_list_check_full RES: similar good boy;2025-09-22 19:51:50

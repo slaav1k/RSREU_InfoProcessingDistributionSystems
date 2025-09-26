@@ -1,0 +1,100 @@
+Event;Timestamp
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+black_list_check_full RES: similar good boy;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+levenshtein_distance;2025-09-20 12:09:50
+black_list_check_full RES: similar good boy;2025-09-20 12:09:50
+send_back_binarization with percent;2025-09-20 12:09:55
+send_back_binarization_with_percent;2025-09-20 12:10:01
+send_back_binarization without percent;2025-09-20 12:10:03
+send_back_binarization_with_percent;2025-09-20 12:10:06
+send_back_binarization without percent;2025-09-20 12:10:08
+ping;2025-09-20 12:21:18
+now;2025-09-20 12:21:18
+type;2025-09-20 12:21:18
+type;2025-09-20 12:21:18
+type;2025-09-20 12:21:18
+type;2025-09-20 12:21:18
+type;2025-09-20 12:21:18
+type;2025-09-20 12:21:18
+type;2025-09-20 12:21:18
+sum;2025-09-20 12:21:18
+pow;2025-09-20 12:21:18
+ping;2025-09-20 12:21:23
+send_back_binary;2025-09-20 12:21:23
+color_inversion;2025-09-20 12:21:29
+color_inversion;2025-09-20 12:21:35
+send_back_binarization with percent;2025-09-20 12:21:40
+send_back_binarization with percent;2025-09-20 12:21:44
+send_back_flip_vertical;2025-09-20 12:21:48
+black_list_check RES: bad_boy;2025-09-20 12:21:51
+black_list_check RES: good_boy;2025-09-20 12:21:51
+black_list_check_full RES: yes good boy;2025-09-20 12:21:52
+black_list_check_full RES: yes good boy;2025-09-20 12:21:52
+black_list_check_full RES: no, bad boy;2025-09-20 12:21:52
+black_list_check_full ERROR: Ошибка: Дата рождения '22.03.2026' не может быть позже текущей даты;2025-09-20 12:21:52
+black_list_check_full ERROR: Ошибка: Неверный формат даты '22-03-1989'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-20 12:21:52
+black_list_check_full ERROR: Ошибка: Неверный формат даты '1989.03.22'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-20 12:21:52
+black_list_check_full RES: no, bad boy;2025-09-20 12:21:52
+ping;2025-09-20 12:21:55
+now;2025-09-20 12:21:55
+black_list_check_full RES: yes good boy;2025-09-20 12:21:57
+black_list_check_full RES: yes good boy;2025-09-20 12:21:57
+black_list_check_full RES: no, bad boy;2025-09-20 12:21:57
+black_list_check_full ERROR: Ошибка: Дата рождения '22.03.2026' не может быть позже текущей даты;2025-09-20 12:21:57
+black_list_check_full ERROR: Ошибка: Неверный формат даты '22-03-1989'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-20 12:21:57
+black_list_check_full ERROR: Ошибка: Неверный формат даты '1989.03.22'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-20 12:21:57
+black_list_check_full RES: no, bad boy;2025-09-20 12:21:57
+black_list_check_full RES: similar good boy;2025-09-20 12:21:57
+black_list_check_full RES: similar good boy;2025-09-20 12:21:57
+black_list_check_full RES: similar good boy;2025-09-20 12:21:57
+black_list_check_full RES: similar good boy;2025-09-20 12:21:57
+black_list_check_full RES: similar good boy;2025-09-20 12:21:57
+send_back_binarization with percent;2025-09-20 12:22:02
+send_back_binarization_with_percent;2025-09-20 12:22:08
+send_back_binarization without percent;2025-09-20 12:22:10
+send_back_binarization_with_percent;2025-09-20 12:22:14
+send_back_binarization without percent;2025-09-20 12:22:16
+ping;2025-09-22 18:46:03
+now;2025-09-22 18:46:03
+black_list_check_full RES: yes good boy;2025-09-22 18:46:08
+black_list_check_full RES: yes good boy;2025-09-22 18:46:08
+black_list_check_full RES: no, bad boy;2025-09-22 18:46:08
+black_list_check_full ERROR: Ошибка: Дата рождения '22.03.2026' не может быть позже текущей даты;2025-09-22 18:46:08
+black_list_check_full ERROR: Ошибка: Неверный формат даты '22-03-1989'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 18:46:08
+black_list_check_full ERROR: Ошибка: Неверный формат даты '1989.03.22'. Ожидается DD.MM.YYYY (например, 22.03.1989);2025-09-22 18:46:08
+black_list_check_full RES: no, bad boy;2025-09-22 18:46:08
+black_list_check_full RES: similar good boy;2025-09-22 18:46:08
+black_list_check_full RES: similar good boy;2025-09-22 18:46:08
+black_list_check_full RES: similar good boy;2025-09-22 18:46:08
+black_list_check_full RES: similar good boy;2025-09-22 18:46:08
+black_list_check_full RES: similar good boy;2025-09-22 18:46:08
+send_back_binarization with percent;2025-09-22 18:46:19
+send_back_binarization with percent;2025-09-22 18:46:28
+send_back_binarization_with_percent;2025-09-22 18:47:01
+send_back_binarization without percent;2025-09-22 18:47:06
+send_back_binarization_with_percent;2025-09-22 18:47:11
+send_back_binarization without percent;2025-09-22 18:47:15
+ping;2025-09-22 19:03:22
+now;2025-09-22 19:03:22
+black_list_check_full RES: yes good boy;2025-09-22 19:04:18
+black_list_check_full RES: yes good boy;2025-09-22 19:04:18
+black_list_check_full RES: no, bad boy;2025-09-22 19:04:18
+black_list_check_full ERROR: Ошибка: Дата рождения '22.03.2026' не может быть позже текущей даты;2025-09-22 19:04:18
