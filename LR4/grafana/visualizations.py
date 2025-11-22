@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+import plotly.express as px
 
 
 # ГИСТОГРАММА: Количество вызовов по типу
@@ -19,45 +20,83 @@ def bar_chart_by_type(log_data):
         return
 
 
-# ГИСТОГРАММА: по времени
-def bar_chart_by_time(log_data, params):
+# ГИСТОГРАММА: По средней длительности операций
+def bar_chart_by_avg_time(log_data):
     if not log_data.empty:
-        st.subheader("Гистограмма: Количество вызовов по времени суток")
-
-        df = log_data.copy()
-        df['ts'] = pd.to_datetime(df['timestamp'])
-
-        # Группировка по интервалу
-        df['time_bin'] = df['ts'].dt.floor(f'{params["group_hours"]}H')
-
-        # Считаем количество в каждом интервале
-        counts = df['time_bin'].value_counts().sort_index()
-
-        full_range = pd.date_range(
-            start=params['start_datetime'],
-            end=params['end_datetime'],
-            freq=f'{params["group_hours"]}H'
+        st.subheader("Гистограмма: Количество вызовов по типу операции")
+        # Группировка по типу
+        count_by_type = log_data['event_type'].value_counts().sort_values(ascending=True)
+        df_time = log_data.dropna(subset=['duration'])
+        time_by_type = ((df_time.groupby('event_type')['duration'].sum()
+                        / df_time.groupby('event_type')['duration'].count())
+                        .sort_values(ascending=False).round(6))
+        chart = st.bar_chart(
+            time_by_type,
+            use_container_width=True,
+            height=400
         )
-        counts = counts.reindex(full_range, fill_value=0)
-
-        labels = counts.index.strftime('%H:%M')
-
-        # Если выбрано 24ч, то даты
-        if params['group_hours'] == 24:
-            labels = counts.index.strftime('%Y-%m-%d')
-
-        # Строим гистограмму
-        chart_data = pd.DataFrame({
-            'Время': labels,
-            'Вызовы': counts.values
-        }).set_index('Время')
-
-        st.bar_chart(chart_data, use_container_width=True, height=500)
-        title = f"Все типы" if not params['event_type'] else f"Тип: `{params['event_type']}`"
-        st.caption(f"Группировка: каждые **{params['group_hours']} ч** | {title}")
+        st.write("**Тип операции → Количество вызовов**")
     else:
+        st.info("Нет данных для построения гистограммы.")
+        return
+
+
+def bar_chart_by_time(log_data, params):
+    if log_data.empty:
         st.info("Нет данных для гистограммы.")
         return
+
+    st.subheader("Гистограмма: Количество вызовов по времени суток")
+
+    df = log_data.copy()
+    df['ts'] = pd.to_datetime(df['timestamp'])  # преобразуем timestamp
+
+    hours = params["group_hours"]
+
+    # === Правильно: извлекаем час из даты и группируем ===
+    df['hour'] = df['ts'].dt.hour
+    df['group_hours'] = (df['hour'] // hours) * hours
+
+    # Считаем количество в каждой группе
+    counts = (
+        df['group_hours']
+        .value_counts()
+        .reindex(range(0, 24, hours), fill_value=0)  # заполняем пустые интервалы нулями
+        .sort_index()
+        .reset_index()
+    )
+    counts.columns = ['group_hours', 'count']
+    counts['label'] = counts['group_hours'].apply(lambda x: f"{x:02d}:00 – {x + hours:02d}:00")
+
+    # Если интервал 24 часа — сделаем подпись "Весь день"
+    if hours == 24:
+        counts['label'] = "00:00 – 23:59 (весь день)"
+
+    # Plotly гистограмма
+    fig = px.bar(
+        counts,
+        x='label',
+        y='count',
+        title=f"Вызовы по времени суток (группировка каждые {hours} ч)",
+        text='count',
+        color_discrete_sequence=['#636EFA']
+    )
+    fig.update_layout(xaxis_title="Время суток", yaxis_title="Количество вызовов")
+    fig.update_traces(textposition='outside')
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    # Дополнительно: простой st.bar_chart (если хочешь)
+    chart_data = pd.DataFrame({
+        'Вызовы': counts['count']
+    }, index=counts['label'])
+
+    # st.bar_chart(chart_data, use_container_width=True, height=400)
+
+    # Подпись
+    event_title = "Все типы" if not params.get('event_type') else f"Тип: `{params['event_type']}`"
+    period = f"{params['start_datetime'].strftime('%d.%m.%Y')} — {params['end_datetime'].strftime('%d.%m.%Y')}"
+    st.caption(f"Группировка: каждые **{hours} ч** • {event_title} • Период: {period}")
 
 # КРУГОВАЯ ДИАГРАММА по типам
 def pie_chart_by_count(log_data):
@@ -102,6 +141,7 @@ def pie_chart_by_count(log_data):
     else:
         st.info("Нет данных для круговой диаграммы.")
         return
+
 
 # КРУГОВАЯ ДИАГРАММА: по суммарному времени выполнения
 def pie_chart_by_duration(log_data):

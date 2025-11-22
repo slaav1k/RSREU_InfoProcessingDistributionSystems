@@ -22,6 +22,8 @@ log_data = load_logs(params)
 
 show_logs_table(log_data)
 st.markdown("---")
+bar_chart_by_avg_time(log_data)
+st.markdown("---")
 show_stats(log_data)
 st.markdown("---")
 show_filters(params)

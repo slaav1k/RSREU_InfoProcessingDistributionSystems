@@ -38,10 +38,10 @@ def user_input_features(event_types):
     start_datetime = datetime.combine(start_date, datetime.min.time())
     end_datetime = datetime.combine(end_date, datetime.max.time())
 
-    group_hours = st.sidebar.select_slider(
+    group_hours = st.sidebar.slider(
         "Интервал группировки, часы",
-        # min_value=1, max_value=24, value=4, step=1
-        options=[1, 4, 24], value=4
+        min_value=1, max_value=24, value=4, step=1
+        # options=[1, 4, 24], value=4
     )
 
     min_duration = st.sidebar.number_input("Мин. длительность (сек)", min_value=0.0, value=0.0, step=0.1)
